@@ -1,3 +1,110 @@
 body {
   background-color: antiquewhite;
+  overflow: hidden;
+}
+
+.green-black-text {
+  width: 50%;
+}
+
+.cls-1.green-text {
+  fill: #00dd00;
+  animation-name: greenToBlack;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+/* #greenG {
+  animation: rotateClockwise linear 3s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  transform-box: fill-box;
+} */
+
+.cls-1 {
+  stroke-width: 0px;
+  fill: #dd00dd;
+}
+
+.cls-1.black-text {
+  fill: black;
+  animation-name: blackToWhite;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes greenToBlack {
+  from {
+    fill: #00dd00;
+  }
+  to {
+    fill: black;
+  }
+}
+@keyframes blackToWhite {
+  from {
+    fill: black;
+  }
+  to {
+    fill: white;
+  }
+}
+.weeeee {
+  position: absolute;
+  top: 10rem;
+  margin-top: 2rem;
+  width: 5000px;
+  /* animation-duration: 5s; */
+  animation: linear 10s slideLeft;
+  animation-iteration-count: infinite;
+}
+
+#weeeee {
+  path {
+    fill: red;
+  }
+
+  path:nth-child(even) {
+    animation: rotateClockwise linear 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+  path:nth-child(odd) {
+    animation: rotateCounterClockwise linear 6s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    transform-box: fill-box;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: -5800px;
+  }
+}
+
+@keyframes rotateClockwise {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center center;
+  }
+}
+@keyframes rotateCounterClockwise {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center center;
+  }
+  100% {
+    transform: rotate(-360deg);
+    transform-origin: center center;
+  }
 }
