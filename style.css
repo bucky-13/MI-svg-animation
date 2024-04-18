@@ -1,5 +1,5 @@
 body {
-  background-color: antiquewhite;
+  background-color: chocolate;
   overflow: hidden;
 }
 
@@ -54,7 +54,6 @@ body {
   top: 10rem;
   margin-top: 2rem;
   width: 5000px;
-  /* animation-duration: 5s; */
   animation: linear 10s slideLeft;
   animation-iteration-count: infinite;
 }
@@ -106,5 +105,29 @@ body {
   100% {
     transform: rotate(-360deg);
     transform-origin: center center;
+  }
+}
+
+#hamster {
+  width: 300px;
+  animation: biiig ease-in-out 4s;
+  animation-iteration-count: infinite;
+}
+
+.cls-2:hover {
+  fill: aqua;
+}
+
+@keyframes biiig {
+  0% {
+    width: 300px;
+  }
+
+  50% {
+    width: 600px;
+  }
+
+  100% {
+    width: 300px;
   }
 }
